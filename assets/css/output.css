@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+:root {
+  --primary: #2334DE;
+  --tertiary: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.dropdown, .dropdown-not {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  cursor: pointer;
+}
+
+.dropdown-not:hover {
+  color: #d14b3e;
+}
+
+.dropdown-content {
+  width: 10rem;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: #999999;
+  border-radius: 10px;
+  margin-top: 0.1rem;
+  border-bottom: #d14b3e 3px solid;
+}
+
+.dropdown-content a {
+  text-align: center;
+  margin: 1rem;
+}
+
+.dropdown span:hover {
+  color: #d14b3e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d14b3e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.dropdown-content a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  clip-path: polygon(0% 0%, 100% 0, 100% 78%, 50% 100%, 0 78%);
+}
+
+.nav-menu span {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  display: block;
+  margin: 7px;
+  border-radius: 10px;
+}
+
+.nav-menu :nth-child(2) {
+  width: 20px;
+}
+
+.services-bg {
+  background: url(../img/bg-services.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.breadcumb {
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+
+.inconsolata-font {
+  font-family: "Inconsolata", monospace;
+}
+
+.tracking-wider .fa-arrow-right {
+  font-size: 12px;
+}
+
+.services-main {
+  position: relative;
+}
+.services-main:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  top: 0;
+  left: 0;
+  background-color: #d93527;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.services-main:hover::before {
+  transform: scaleX(1);
+  transform-origin: top;
+}
+.services-main:hover {
+  box-shadow: 0 0 10px 5px rgb(216, 213, 213);
+}
+
+/*# sourceMappingURL=output.css.map */

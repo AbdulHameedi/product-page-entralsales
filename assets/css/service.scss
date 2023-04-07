@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+:root{
+    --red: #f02801;
+    --black: #0a2939;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.services-bg{
+    background: url(../img/bg-services.png) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.breadcumb{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+
+.inconsolata-font{
+    font-family: 'Inconsolata', monospace;
+}
+
+.tracking-wider .fa-arrow-right{ 
+    font-size: 12px;
+}
+
+
+
+
+// 
+//               ------------------------------------------------
+//                     LIST OF SERVICES
+// 
+
+
+.main-category{
+    position: relative;
+    display: inline-block;
+}
+
+.main-category::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--red);
+    bottom: 0;
+    left: 0;
+}
+
+
+.dropdown-content{
+//  box-shadow: 0 0 10px 5px rgb(216, 213, 213);
+ box-shadow: 10px 0px 10px -5px rgb(216, 213, 213), -10px 0px 10px -5px rgb(216, 213, 213), 0px 10px 10px -5px rgb(216, 213, 213);
+ z-index: 2;
+ overflow: auto;
+ top: 2rem;
+
+ p{
+    margin-bottom: 0.3rem;
+    padding: 3px 10px;
+ }
+}
+
+
+p.active, .dropdown-content p:hover{
+    background-color: var(--black);
+    color: white;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+
+.dropdown-select-js{
+    display: block;
+}
+
+
+.services-grid{
+    box-shadow: 1px 1px 5px 1px rgb(216, 213, 213);
+
+    button:hover{
+        color: white;
+        background-color: var(--red);
+        transition: all 0.3s;
+    }
+
+}
+
+.cancel-eagle{
+    box-shadow: 1px 1px 5px 1px rgb(216, 213, 213);
+
+    &:hover{
+        box-shadow: 1px 1px 5px 1px #0a2939;
+    }
+}
+
+.image-transition{
+    transform: scaleX(-1);
+    transition: all 0.3s ease-out;
+}
+
+
+.eagle-eye{
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.eagle-display:hover{
+    .eagle-eye{
+        opacity: 1;
+    }
+    
+}
+
+.translate-p{
+    transform: rotate(39deg);
+    z-index: -1;
+}
+
+.overlay{
+    z-index: 3;
+    // margin: 200px auto;
+}
