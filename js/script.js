@@ -9,7 +9,6 @@ document.querySelector(".services-categories").addEventListener("click", () => {
     document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
 })
 
-
 // -----------------------------------------------------FIRST SERVICE-----------------------
 
 // IMAGE TRANSLATE
@@ -93,8 +92,8 @@ document.querySelector(".translate-image-2").addEventListener("mouseover", imgTr
 
 function eagleClickTwo(){
 
-var imgAtttributeSetThreeA = "./assets/img/onion-" + 1 + ".png";
 
+    var imgAtttributeSetThreeA = "./assets/img/onion-" + 1 + ".png";
 
     document.querySelector(".quick-eye").classList.add("eagle-display");
     document.querySelector(".overlay").classList.add("eagle-display");
@@ -108,12 +107,11 @@ var imgAtttributeSetThreeA = "./assets/img/onion-" + 1 + ".png";
     document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetThreeA)
 
 
-
     // ICON -1
 
 
 function imgQuickview(){
-    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeA)
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeB)
 }
 
 document.querySelector(".icon-arrow").addEventListener("click", imgQuickview)
@@ -125,7 +123,7 @@ document.querySelector(".icon-arrow").addEventListener("click", imgQuickview)
 var imgAtttributeSetThreeB = "./assets/img/onion-" + 2 + ".png";
 
 function imgQuickviewThree(){
-    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeB)
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeA)
 }
 
 document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewThree)
@@ -134,6 +132,68 @@ document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewTh
 
 
 document.querySelector(".eagle-eye-main-2").addEventListener("click", eagleClickTwo);
+
+
+
+
+
+
+
+// -----------------------------------------------------THIIRD SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateThree(){
+    document.querySelector(".translate-image-3").classList.add("image-transition");
+}  
+function event(){
+    imgTranslateTwo()
+}
+document.querySelector(".translate-image-3").addEventListener("mouseover", imgTranslateThree);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickThree(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/ginger-" + 1 + ".png";
+
+    document.querySelector(".quick-eye").classList.add("eagle-display");
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Ginger is a popular spice with a warm, pungent flavor and a long history of use in traditional medicine."
+    document.getElementById("text-short-quickview").innerHTML = "Ginger can be used fresh, dried, powdered, and it is a common ingredient around the world.";
+    document.getElementById("amount-quickview").innerHTML = '5,000.00';
+    //  
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(5) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/ginger-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-3").addEventListener("click", eagleClickThree);
 
 
 
