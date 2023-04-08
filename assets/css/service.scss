@@ -51,6 +51,7 @@ body{
 .main-category{
     position: relative;
     display: inline-block;
+    width: fit-content;
 }
 
 .main-category::before{
@@ -137,5 +138,25 @@ p.active, .dropdown-content p:hover{
 
 .overlay{
     z-index: 3;
-    // margin: 200px auto;
 }
+
+
+.icon-arrow, .icon-arrow-2{
+    transition: all 0.3s;
+    opacity: 0;
+}
+.img-quickview:hover{
+
+    .icon-arrow,.icon-arrow-2{
+        opacity: 1;
+    }
+}
+
+.overlay, .quick-eye{
+    display: none;
+}
+
+.eagle-display{
+    display: block;
+}
+
