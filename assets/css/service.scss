@@ -160,3 +160,9 @@ p.active, .dropdown-content p:hover{
     display: block;
 }
 
+@media screen and (max-width:950px){
+    .quick-eye{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}

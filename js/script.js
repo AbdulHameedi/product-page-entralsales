@@ -57,7 +57,6 @@ document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewTw
 function eagleClick(){
     document.querySelector(".quick-eye").classList.add("eagle-display");
     document.querySelector(".overlay").classList.add("eagle-display");
-    document.body.style.overflow = "hidden";
 }
 
 document.querySelector(".eagle-eye-main").addEventListener("click", eagleClick);
@@ -87,18 +86,56 @@ function imgTranslateTwo(){
 function event(){
     imgTranslateTwo()
 }
-
 document.querySelector(".translate-image-2").addEventListener("mouseover", imgTranslateTwo);
+
 
 // QUICK VIEW DISPLAY
 
 function eagleClickTwo(){
+
+var imgAtttributeSetThreeA = "./assets/img/onion-" + 1 + ".png";
+
+
     document.querySelector(".quick-eye").classList.add("eagle-display");
     document.querySelector(".overlay").classList.add("eagle-display");
-    document.body.style.overflow = "hidden";
+    document.getElementById("text-long-quickview").innerHTML = "Onions are a good source of several B vitamins, including pyridoxine."
+    document.getElementById("text-short-quickview").innerHTML = "Onions can be stored in a cool, dry place for several weeks, making them a long-lasting staple";
+    document.getElementById("amount-quickview").innerHTML = '19, 000.00';
+    //  
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetThreeA)
+
+
+
+    // ICON -1
+
+
+function imgQuickview(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeA)
 }
 
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickview)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetThreeB = "./assets/img/onion-" + 2 + ".png";
+
+function imgQuickviewThree(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeB)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewThree)
+}
+
+
+
 document.querySelector(".eagle-eye-main-2").addEventListener("click", eagleClickTwo);
+
+
 
 
 
