@@ -138,6 +138,7 @@ p.active, .dropdown-content p:hover{
 
 .overlay{
     z-index: 3;
+    background-color: rgba(0,0,0,0.4)
 }
 
 
@@ -152,7 +153,7 @@ p.active, .dropdown-content p:hover{
     }
 }
 
-.overlay, .quick-eye{
+.overlay{
     display: none;
 }
 
@@ -160,10 +161,14 @@ p.active, .dropdown-content p:hover{
     display: block;
 }
 
-@media screen and (max-width:980px){
+
+
+@media screen and (max-width:743px){
     .quick-eye{
-        overflow-y: scroll;
+        // overflow-y: scroll;
+        overflow: auto;
         overflow-x: hidden;
+        height: 450px;
     }
 }
 

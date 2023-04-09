@@ -9,6 +9,12 @@ document.querySelector(".services-categories").addEventListener("click", () => {
     document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
 })
 
+
+// MODAL FOR QUICK EYE
+
+var modal = document.querySelector(".overlay")
+
+
 // -----------------------------------------------------FIRST SERVICE-----------------------
 
 // IMAGE TRANSLATE
@@ -20,7 +26,6 @@ function event(){
 }
 
 document.querySelector(".translate-image").addEventListener("mouseover", imgTranslate);
-
 
 
 // IMG QUICK VIEW
@@ -54,8 +59,8 @@ document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewTw
 // QUICK VIEW DISPLAY
 
 function eagleClick(){
-    document.querySelector(".quick-eye").classList.add("eagle-display");
     document.querySelector(".overlay").classList.add("eagle-display");
+    modal.style.display = "block"
 }
 
 document.querySelector(".eagle-eye-main").addEventListener("click", eagleClick);
@@ -67,13 +72,18 @@ document.querySelector(".eagle-eye-main").addEventListener("click", eagleClick);
 
 // 
 function eagleNonDisplay(){
-    document.querySelector(".quick-eye").classList.remove("eagle-display");
-    document.querySelector(".overlay").classList.remove("eagle-display");
+    modal.style.display = "none"
     document.body.style.overflow = "visible";
 }
 
 document.querySelector(".cancel-eagle").addEventListener("click", eagleNonDisplay);
-document.querySelector(".overlay").addEventListener("click", eagleNonDisplay);
+
+
+window.onclick = function(event){
+    if (event.target == modal){
+            modal.style.display = "none";
+    }
+}
 
 
 
@@ -94,8 +104,7 @@ function eagleClickTwo(){
 
 
     var imgAtttributeSetThreeA = "./assets/img/onion-" + 1 + ".png";
-
-    document.querySelector(".quick-eye").classList.add("eagle-display");
+    modal.style.display = "block"
     document.querySelector(".overlay").classList.add("eagle-display");
     document.getElementById("text-long-quickview").innerHTML = "Onions are a good source of several B vitamins, including pyridoxine."
     document.getElementById("text-short-quickview").innerHTML = "Onions can be stored in a cool, dry place for several weeks, making them a long-lasting staple";
@@ -144,9 +153,7 @@ document.querySelector(".eagle-eye-main-2").addEventListener("click", eagleClick
 function imgTranslateThree(){
     document.querySelector(".translate-image-3").classList.add("image-transition");
 }  
-function event(){
-    imgTranslateTwo()
-}
+
 document.querySelector(".translate-image-3").addEventListener("mouseover", imgTranslateThree);
 
 
@@ -156,8 +163,7 @@ function eagleClickThree(){
 
 
     var imgAtttributeSetFourA = "./assets/img/ginger-" + 1 + ".png";
-
-    document.querySelector(".quick-eye").classList.add("eagle-display");
+    modal.style.display = "block"
     document.querySelector(".overlay").classList.add("eagle-display");
     document.getElementById("text-long-quickview").innerHTML = "Ginger is a popular spice with a warm, pungent flavor and a long history of use in traditional medicine."
     document.getElementById("text-short-quickview").innerHTML = "Ginger can be used fresh, dried, powdered, and it is a common ingredient around the world.";
@@ -204,7 +210,7 @@ function imgTranslateFour(){
     document.querySelector(".translate-image-4").classList.add("image-transition");
 }  
 function event(){
-    imgTranslateTwo()
+    imgTranslateFour()
 }
 document.querySelector(".translate-image-4").addEventListener("mouseover", imgTranslateFour);
 
@@ -215,7 +221,7 @@ function eagleClickFour(){
 
 
     var imgAtttributeSetFourA = "./assets/img/garlic-" + 1 + ".png";
-
+    modal.style.display = "block"
     document.querySelector(".quick-eye").classList.add("eagle-display");
     document.querySelector(".overlay").classList.add("eagle-display");
     document.getElementById("text-long-quickview").innerHTML = "Garlic is a member of the Allium family, which also includes onions, shallots, and leeks."
@@ -254,9 +260,168 @@ document.querySelector(".eagle-eye-main-4").addEventListener("click", eagleClick
 
 
 
+// -----------------------------------------------------FIFTH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateFive(){
+    document.querySelector(".translate-image-5").classList.add("image-transition");
+}  
+function event(){
+    imgTranslateFive()
+}
+document.querySelector(".translate-image-5").addEventListener("mouseover", imgTranslateFive);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickFive(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/tumeric-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Turmeric is a spice that is commonly used in Middle Eastern, and Southeast Asian cuisine."
+    document.getElementById("text-short-quickview").innerHTML = "The active ingredient in turmeric is known for its powerful anti-inflammatory and antioxidant properties.";
+    document.getElementById("amount-quickview").innerHTML = '10,000.00';
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/tumeric-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-5").addEventListener("click", eagleClickFive);
+
+
+
+// -----------------------------------------------------SIXTH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateSix(){
+    document.querySelector(".translate-image-6").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-6").addEventListener("mouseover", imgTranslateSix);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickSix(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/dates-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Dates can provide a quick burst of energy during a long day of fasting"
+    document.getElementById("text-short-quickview").innerHTML = "Dates are rich in fiber, which can help to promote digestive health and prevent constipation, a common issue during Ramadan.";
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/dates-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-6").addEventListener("click", eagleClickSix);
 
 
 
 
 
 
+// -----------------------------------------------------SEVENTH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateSeven(){
+    document.querySelector(".translate-image-7").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-7").addEventListener("mouseover", imgTranslateSeven);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickSeven(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/sweetpotato-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Sweet potatoes are a nutritious and versatile root vegetable that are often used in cooking."
+    document.getElementById("text-short-quickview").innerHTML = "Sweet potatoes are typically orange or purple and have a sweet, creamy flesh that can be roasted.";
+    document.getElementById("amount-quickview").innerHTML = '<span class="line-through text-[#999999]">10,000</span> &nbsp; <i class="fa-solid fa-naira-sign"></i> 5, 000.00';
+    //  
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("font-bold")
+    document.getElementById("icon-quickview-2").classList.add("ftext-[#FFD700]")
+    document.getElementById("review-quickview").innerHTML = '(5) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/sweetpotato-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-7").addEventListener("click", eagleClickSeven);
