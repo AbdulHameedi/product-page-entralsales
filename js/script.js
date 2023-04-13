@@ -16,7 +16,6 @@ var modal = document.querySelector(".overlay")
 
 
 // -----------------------------------------------------FIRST SERVICE-----------------------
-
 // IMAGE TRANSLATE
 function imgTranslate(){
     document.querySelector(".translate-image").classList.add("image-transition");
@@ -108,7 +107,7 @@ function eagleClickTwo(){
     document.querySelector(".overlay").classList.add("eagle-display");
     document.getElementById("text-long-quickview").innerHTML = "Onions are a good source of several B vitamins, including pyridoxine."
     document.getElementById("text-short-quickview").innerHTML = "Onions can be stored in a cool, dry place for several weeks, making them a long-lasting staple";
-    document.getElementById("amount-quickview").innerHTML = '<span class="line-through text-[#999999]">19,000</span> &nbsp; <i class="fa-solid fa-naira-sign"></i> 6, 000.00';
+    document.getElementById("amount-quickview").innerHTML = '7,000.00';
     //  
     document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
     document.getElementById("icon-quickview").classList.remove("font-bold")
@@ -171,7 +170,7 @@ function eagleClickThree(){
     //  
     document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
     document.getElementById("icon-quickview-2").classList.add("font-bold")
-    document.getElementById("icon-quickview-2").classList.add("ftext-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
     document.getElementById("review-quickview").innerHTML = '(5) Reviews';
     document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
 
@@ -391,11 +390,12 @@ function eagleClickSeven(){
     document.querySelector(".overlay").classList.add("eagle-display");
     document.getElementById("text-long-quickview").innerHTML = "Sweet potatoes are a nutritious and versatile root vegetable that are often used in cooking."
     document.getElementById("text-short-quickview").innerHTML = "Sweet potatoes are typically orange or purple and have a sweet, creamy flesh that can be roasted.";
-    document.getElementById("amount-quickview").innerHTML = '<span class="line-through text-[#999999]">10,000</span> &nbsp; <i class="fa-solid fa-naira-sign"></i> 5, 000.00';
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
     //  
     document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
     document.getElementById("icon-quickview-2").classList.add("font-bold")
-    document.getElementById("icon-quickview-2").classList.add("ftext-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add(" text-[#FFD700]")
     document.getElementById("review-quickview").innerHTML = '(5) Reviews';
     document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
 
@@ -425,3 +425,274 @@ document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFo
 
 
 document.querySelector(".eagle-eye-main-7").addEventListener("click", eagleClickSeven);
+
+
+// -----------------------------------------------------EIGHT SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateEight(){
+    document.querySelector(".translate-image-8").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-8").addEventListener("mouseover", imgTranslateEight);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickEight(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/sugar-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Sugar cravings are common, but can be satisfied with healthier options."
+    document.getElementById("text-short-quickview").innerHTML = "The sugar industry employs millions of people worldwide in cultivation and processing.";
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/sugar-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-8").addEventListener("click", eagleClickEight);
+
+
+
+
+// -----------------------------------------------------NINTH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateNine(){
+    document.querySelector(".translate-image-9").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-9").addEventListener("mouseover", imgTranslateNine);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickNine(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/garri-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Garri's nutrients are essential and can help prevent deficiencies that can lead to illness."
+    document.getElementById("text-short-quickview").innerHTML = "Garri is rich in vitamins and minerals, including vitamin C, vitamin B6, iron, and magnesium. ";
+    document.getElementById("amount-quickview").innerHTML = '20,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/garri-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-9").addEventListener("click", eagleClickNine);
+
+
+
+// -----------------------------------------------------TENTH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTen(){
+    document.querySelector(".translate-image-10").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-10").addEventListener("mouseover", imgTranslateTen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTen(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/yam.jpg";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "The high fiber content in yam can help improve digestive health"
+    document.getElementById("text-short-quickview").innerHTML = "Yam is a highly nutritious tuber that is packed with vitamins, minerals, and fiber";
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+    document.getElementById("amount-quickview").innerHTML = '7,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/yam-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-10").addEventListener("click", eagleClickTen);
+
+
+
+
+
+// -----------------------------------------------------ELEVENTH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateEleven(){
+    document.querySelector(".translate-image-11").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-11").addEventListener("mouseover", imgTranslateEleven);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickEleven(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/elubo-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Yoruba elubo is rich in carbohydrates, which makes it an excellent source of energy for the body. "
+    document.getElementById("text-short-quickview").innerHTML = "Elubo is a low-fat, low-calorie food that can help with healthy weight management.";
+    document.getElementById("amount-quickview").innerHTML = '15,000.00';
+    //  
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("font-bold")
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("review-quickview").innerHTML = '(5) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/elubo-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-11").addEventListener("click", eagleClickEleven);
+
+
+
+
+// -----------------------------------------------------TWELVETH SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTwelve(){
+    document.querySelector(".translate-image-4").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-4").addEventListener("mouseover", imgTranslateTwelve);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTwelve(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/beans-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".quick-eye").classList.add("eagle-display");
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Beans are a great source of plant-based protein, fiber, vitamins, and minerals."
+    document.getElementById("text-short-quickview").innerHTML = "They also contain resistant starch, which can promote the growth of good bacteria in the gut, improving digestive health.";
+    document.getElementById("amount-quickview").innerHTML = '10,000.00';
+    //  
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/beans-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-12").addEventListener("click", eagleClickTwelve);
