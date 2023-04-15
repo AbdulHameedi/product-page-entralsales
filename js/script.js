@@ -696,3 +696,443 @@ document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFo
 
 
 document.querySelector(".eagle-eye-main-12").addEventListener("click", eagleClickTwelve);
+
+
+
+
+// -----------------------------------------------------THIRTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateThirteen(){
+    document.querySelector(".translate-image-13").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-13").addEventListener("mouseover", imgTranslateThirteen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickThirteen(){
+
+    var imgAtttributeSetFourA = "./assets/img/driedyam-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Dried yam is a popular food ingredient that has been used for centuries in West African cuisine. I"
+    document.getElementById("text-short-quickview").innerHTML = "It is also rich in vitamins and minerals, including potassium, calcium, and vitamin C.";
+    document.getElementById("amount-quickview").innerHTML = '10,000.00';
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/driedyam-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-13").addEventListener("click", eagleClickThirteen);
+
+
+
+
+
+// -----------------------------------------------------FOURTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateFourteen(){
+    document.querySelector(".translate-image-14").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-14").addEventListener("mouseover", imgTranslateFourteen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickFourteen(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/cassavaflour-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Cassava flour is versatile and can be used in a wide range of recipes"
+    document.getElementById("text-short-quickview").innerHTML = "Cassava flour is rich in dietary fiber, which can help regulate blood sugar levels";
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/cassavaflour-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-14").addEventListener("click", eagleClickFourteen);
+
+
+
+
+// -----------------------------------------------------FIFTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateFifteen(){
+    document.querySelector(".translate-image-15").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-15").addEventListener("mouseover", imgTranslateFifteen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickFifteen(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/rice-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "White rice supports energy and restores glycogen levels after exercise"
+    document.getElementById("text-short-quickview").innerHTML = "Rice is an affordable and versatile ingredient that can be used in a variety of dishes, from savory to sweet. ";
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("font-bold")
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("review-quickview").innerHTML = '(5) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/rice-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-15").addEventListener("click", eagleClickFifteen);
+
+
+
+// -----------------------------------------------------SIXTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateSixteen(){
+    document.querySelector(".translate-image-16").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-10").addEventListener("mouseover", imgTranslateSixteen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickSixteen(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/yam.jpg";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "The high fiber content in yam can help improve digestive health"
+    document.getElementById("text-short-quickview").innerHTML = "Yam is a highly nutritious tuber that is packed with vitamins, minerals, and fiber";
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+    document.getElementById("amount-quickview").innerHTML = '7,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/yam-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-16").addEventListener("click", eagleClickSixteen);
+
+
+
+
+// -----------------------------------------------------SEVENTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateSeventeen(){
+    document.querySelector(".translate-image-17").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-17").addEventListener("mouseover", imgTranslateSeventeen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickSeventeen(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/croaker-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Croaker is a great seafood option for anyone looking to boost their immune system"
+    document.getElementById("text-short-quickview").innerHTML = "Croaker a good source of protein, vitamins, and minerals, and is low in fat and calories. ";
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/croaker-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-17").addEventListener("click", eagleClickSeventeen);
+
+
+
+
+// -----------------------------------------------------EIGHTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateEighteen(){
+    document.querySelector(".translate-image-18").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-18").addEventListener("mouseover", imgTranslateEighteen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickEighteen(){
+
+
+    var imgAtttributeSetThreeA = "./assets/img/hake-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Hake is a good source of potassium, which helps to regulate blood pressure."
+    document.getElementById("text-short-quickview").innerHTML = "Hake is a nutritious and delicious fish that is rich in protein, vitamins, and minerals";
+    document.getElementById("amount-quickview").innerHTML = '7,000.00';
+    //  
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetThreeA)
+
+
+    // ICON -1
+
+
+function imgQuickview(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickview)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetThreeB = "./assets/img/hake-" + 2 + ".png";
+
+function imgQuickviewThree(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewThree)
+}
+
+
+
+document.querySelector(".eagle-eye-main-18").addEventListener("click", eagleClickEighteen);
+
+
+
+
+// -----------------------------------------------------NINETTEEN SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateNineteen(){
+    document.querySelector(".translate-image-19").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-19").addEventListener("mouseover", imgTranslateNineteen);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickNineteen(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/mackerel-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Mackerel is a nutrient-dense fish that is packed with essential vitamins and minerals. "
+    document.getElementById("text-short-quickview").innerHTML = "One of the great benefits of mackerel is that it is a low-calorie, high-protein food..";
+    document.getElementById("amount-quickview").innerHTML = '15,000.00';
+    //  
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("font-bold")
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("review-quickview").innerHTML = '(5) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/mackerel-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-19").addEventListener("click", eagleClickNineteen);
+
+
+
+
+// -----------------------------------------------------TWENTY SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTwenty(){
+    document.querySelector(".translate-image-20").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-20").addEventListener("mouseover", imgTranslateTwenty);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTwenty(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/titus-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".quick-eye").classList.add("eagle-display");
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Titus fish are also a good source of protein, vitamins, and minerals"
+    document.getElementById("text-short-quickview").innerHTML = "Titus fish are also a good source of protein, vitamins, and minerals, making them a healthy addition to any diet.";
+    document.getElementById("amount-quickview").innerHTML = '10,000.00';
+    //  
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/titus-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-20").addEventListener("click", eagleClickTwenty);
