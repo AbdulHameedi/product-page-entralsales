@@ -1,3 +1,21 @@
+let loadMore = document.querySelector(".load-more") 
+let showCategory = document.querySelector(".show-category")
+let showCategoryTwo = document.querySelector(".show-category-two")
+let dropdownContent = document.querySelectorAll(".dropdown-content p")
+let allProducts = document.querySelector(".all-products")
+let categoryOne = document.querySelector(".category-one")
+let categoryTwo = document.querySelector(".category-two")
+let categoryThree = document.querySelector(".category-three")
+let categoryFour = document.querySelector(".category-four")
+let active = document.querySelector(".active")
+let pepper = document.getElementById("pepper")
+let rawFoods = document.getElementById("rawfoods")
+let fish = document.getElementById("fish")
+let nylon = document.getElementById("nylon")
+let roots = document.getElementById("roots")
+let all = document.getElementById("all")
+
+
 function dropdownSelect(){
     document.querySelector(".dropdown-content").classList.toggle("dropdown-select-js")
 }
@@ -7,8 +25,27 @@ document.querySelector(".dropdown-select").addEventListener("click", dropdownSel
 
 document.querySelector(".services-categories").addEventListener("click", () => {
     document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
-})
+}
+)
 
+categoryTwo.onclick = function(){
+    document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
+
+}
+
+categoryThree.onclick = function(){
+    document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
+
+}
+
+categoryFour.onclick = function(){
+    document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
+
+}
+
+all.onclick = function(){
+    document.querySelector(".dropdown-content").classList.remove("dropdown-select-js")
+}
 
 // MODAL FOR QUICK EYE
 
@@ -1136,3 +1173,286 @@ document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFo
 
 
 document.querySelector(".eagle-eye-main-20").addEventListener("click", eagleClickTwenty);
+
+
+
+// -----------------------------------------------------TWENTY-ONE SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTwentyOne(){
+    document.querySelector(".translate-image-21").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-21").addEventListener("mouseover", imgTranslateTwentyOne);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTwentyOne(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/tomato-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "The vitamin C found in tomatoes can help improve skin health"
+    document.getElementById("text-short-quickview").innerHTML = "Tomatoes are a great source of vitamins A, C, and K, as well as potassium and folate. ";
+    document.getElementById("amount-quickview").innerHTML = '9,000.00';
+
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/tomato-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-21").addEventListener("click", eagleClickTwentyOne);
+
+
+
+
+// -----------------------------------------------------    TWENTY TWO SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTwentyTwo(){
+    document.querySelector(".translate-image-22").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-22").addEventListener("mouseover", imgTranslateTwentyTwo);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTwentyTwo(){
+
+
+    var imgAtttributeSetThreeA = "./assets/img/tatashe-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Yoruba tatashe pepper is rich in vitamins and minerals, including vitamin C"
+    document.getElementById("text-short-quickview").innerHTML = "Tatashe pepper is also known for its anti-inflammatory properties, which can help reduce inflammation and pain in the body.";
+    document.getElementById("amount-quickview").innerHTML = '7,000.00';
+    //  
+    document.getElementById("icon-quickview").classList.remove("text-[#FFD700]")
+    document.getElementById("icon-quickview").classList.remove("font-bold")
+    document.getElementById("review-quickview").innerHTML = '(3) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetThreeA)
+
+
+    // ICON -1
+
+
+function imgQuickview(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickview)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetThreeB = "./assets/img/tatashe-" + 2 + ".png";
+
+function imgQuickviewThree(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetThreeA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewThree)
+}
+
+
+
+document.querySelector(".eagle-eye-main-22").addEventListener("click", eagleClickTwentyTwo);
+
+
+
+// -----------------------------------------------------TWENTY-THREE SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTwentyThree(){
+    document.querySelector(".translate-image-23").classList.add("image-transition");
+}  
+
+document.querySelector(".translate-image-23").addEventListener("mouseover", imgTranslateTwentyThree);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTwentyThree(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/bawaa-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Bawaa has been shown to reduce inflammation in the body, which can help alleviate pain"
+    document.getElementById("text-short-quickview").innerHTML = "One of the most significant benefits of Yoruba bawaa pepper is its ability to boost metabolism and aid in weight loss.";
+    document.getElementById("amount-quickview").innerHTML = '15,000.00';
+    //  
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("icon-quickview-2").classList.add("font-bold")
+    document.getElementById("icon-quickview-2").classList.add("text-[#FFD700]")
+    document.getElementById("review-quickview").innerHTML = '(5) Reviews';
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/bawaa-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-23").addEventListener("click", eagleClickTwentyThree);
+
+
+// -----------------------------------------------------TWENTY-FOUR SERVICE-----------------------
+// IMAGE TRANSLATE
+function imgTranslateTwentyFour(){
+    document.querySelector(".translate-image-20").classList.add("image-transition");
+}  
+document.querySelector(".translate-image-20").addEventListener("mouseover", imgTranslateTwentyFour);
+
+
+// QUICK VIEW DISPLAY
+
+function eagleClickTwentyFour(){
+
+
+    var imgAtttributeSetFourA = "./assets/img/rodo-" + 1 + ".png";
+    modal.style.display = "block"
+    document.querySelector(".quick-eye").classList.add("eagle-display");
+    document.querySelector(".overlay").classList.add("eagle-display");
+    document.getElementById("text-long-quickview").innerHTML = "Rodo is a potent antioxidant that helps to protect the body against damage from free radicals. "
+    document.getElementById("text-short-quickview").innerHTML = "Yoruba rodo pepper is rich in vitamin C, which is a powerful antioxidant that helps to protect the body against damage from free radicals";
+    document.getElementById("amount-quickview").innerHTML = '10,000.00';
+    //  
+   
+    document.getElementById('imgforquickview').setAttribute("src" , imgAtttributeSetFourA)
+
+
+    // ICON -1
+
+
+function imgQuickviewTwo(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourB)
+}
+
+document.querySelector(".icon-arrow").addEventListener("click", imgQuickviewTwo)
+
+
+
+// ICON - 2
+
+var imgAtttributeSetFourB = "./assets/img/rodo-" + 2 + ".png";
+
+function imgQuickviewFour(){
+    document.querySelector(".main-img-quickview").setAttribute("src", imgAtttributeSetFourA)
+}
+
+document.querySelector(".icon-arrow-2").addEventListener("click", imgQuickviewFour)
+}
+
+
+
+document.querySelector(".eagle-eye-main-24").addEventListener("click", eagleClickTwentyFour);
+
+
+
+// --------------------END OF SERVICES
+
+
+
+
+
+loadMore.onclick = function (){
+    loadMore.style.display = 'none'
+    showCategory.style.display = 'grid'
+    showCategoryTwo.style.display = 'grid'
+}   
+
+for (let i = 0; i < dropdownContent.length; i++){
+    dropdownContent[i].addEventListener("click" , productNames);
+    function productNames(){
+        allProducts.textContent = this.textContent;
+        // dropdownContent[0].classList.remove("active")
+        // this.classList.add("active")
+
+    }
+}
+
+
+pepper.onclick = function(){
+    categoryOne.style.display = 'none'
+    categoryTwo.style.display = 'none'
+    categoryThree.style.display = 'none'
+    categoryFour.style.display = 'grid'
+    loadMore.style.display = 'none'
+    
+}
+
+rawFoods.onclick = function(){
+    categoryOne.style.display = 'grid'
+    categoryTwo.style.display = 'none'
+    categoryThree.style.display = 'none'
+    categoryFour.style.display = 'none'
+    loadMore.style.display = 'none'
+    
+}
+
+fish.onclick = function(){
+    categoryOne.style.display = 'none'
+    categoryTwo.style.display = 'none'
+    categoryThree.style.display = 'grid'
+    categoryFour.style.display = 'none'
+    loadMore.style.display = 'none'
+    
+}
+
+roots.onclick = function(){
+    categoryOne.style.display = 'none'
+    categoryTwo.style.display = 'grid'
+    categoryThree.style.display = 'none'
+    categoryFour.style.display = 'none'
+    loadMore.style.display = 'none'
+}
+
+all.onclick = function(){
+    categoryOne.style.display = 'grid'
+    categoryTwo.style.display = 'grid'
+    categoryThree.style.display = 'grid'
+    categoryFour.style.display = 'grid'
+}

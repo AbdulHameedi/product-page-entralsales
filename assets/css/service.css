@@ -141,5 +141,12 @@ p.active, .dropdown-content p:hover {
     height: 450px;
   }
 }
+.load-more button:hover {
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
 
 /*# sourceMappingURL=service.css.map */
